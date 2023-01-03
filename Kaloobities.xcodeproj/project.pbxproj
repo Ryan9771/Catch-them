@@ -15,6 +15,8 @@
 		94B3ADE32964462B0084DDED /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 94B3ADCE2964462A0084DDED /* GameScene.sks */; };
 		94B3ADE42964462B0084DDED /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B3ADCF2964462A0084DDED /* GameScene.swift */; };
 		94B3ADE52964462B0084DDED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B3ADD02964462B0084DDED /* Assets.xcassets */; };
+		94B3ADEC29644EFD0084DDED /* basket.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B3ADEB29644EFD0084DDED /* basket.png */; };
+		94B3ADEE296454060084DDED /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B3ADED296454060084DDED /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		94B3ADDA2964462B0084DDED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		94B3ADDD2964462B0084DDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94B3ADE02964462B0084DDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94B3ADEB29644EFD0084DDED /* basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = basket.png; path = ../../../../../Downloads/basket.png; sourceTree = "<group>"; };
+		94B3ADED296454060084DDED /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = ../../../../../Downloads/ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		94B3ADCC2964462A0084DDED /* Kaloobities Shared */ = {
 			isa = PBXGroup;
 			children = (
+				94B3ADEB29644EFD0084DDED /* basket.png */,
+				94B3ADED296454060084DDED /* ball.png */,
 				94B3ADCD2964462A0084DDED /* Actions.sks */,
 				94B3ADCE2964462A0084DDED /* GameScene.sks */,
 				94B3ADCF2964462A0084DDED /* GameScene.swift */,
@@ -140,8 +146,10 @@
 				94B3ADE32964462B0084DDED /* GameScene.sks in Resources */,
 				94B3ADDE2964462B0084DDED /* Main.storyboard in Resources */,
 				94B3ADE22964462B0084DDED /* Actions.sks in Resources */,
+				94B3ADEC29644EFD0084DDED /* basket.png in Resources */,
 				94B3ADE12964462B0084DDED /* LaunchScreen.storyboard in Resources */,
 				94B3ADE52964462B0084DDED /* Assets.xcassets in Resources */,
+				94B3ADEE296454060084DDED /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
