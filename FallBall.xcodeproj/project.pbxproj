@@ -26,7 +26,7 @@
 		94B3ADCE2964462A0084DDED /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		94B3ADCF2964462A0084DDED /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		94B3ADD02964462B0084DDED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		94B3ADD52964462B0084DDED /* Kaloobities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaloobities.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B3ADD52964462B0084DDED /* FallBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FallBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B3ADD82964462B0084DDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94B3ADDA2964462B0084DDED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		94B3ADDD2964462B0084DDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,13 +47,13 @@
 		94B3ADC72964462A0084DDED = {
 			isa = PBXGroup;
 			children = (
-				94B3ADCC2964462A0084DDED /* Kaloobities Shared */,
-				94B3ADD72964462B0084DDED /* Kaloobities iOS */,
+				94B3ADCC2964462A0084DDED /* FallBall Shared */,
+				94B3ADD72964462B0084DDED /* FallBall iOS */,
 				94B3ADD62964462B0084DDED /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		94B3ADCC2964462A0084DDED /* Kaloobities Shared */ = {
+		94B3ADCC2964462A0084DDED /* FallBall Shared */ = {
 			isa = PBXGroup;
 			children = (
 				941171422966037100CD4803 /* ball.png */,
@@ -63,18 +63,18 @@
 				94B3ADCF2964462A0084DDED /* GameScene.swift */,
 				94B3ADD02964462B0084DDED /* Assets.xcassets */,
 			);
-			path = "Kaloobities Shared";
+			path = "FallBall Shared";
 			sourceTree = "<group>";
 		};
 		94B3ADD62964462B0084DDED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94B3ADD52964462B0084DDED /* Kaloobities.app */,
+				94B3ADD52964462B0084DDED /* FallBall.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		94B3ADD72964462B0084DDED /* Kaloobities iOS */ = {
+		94B3ADD72964462B0084DDED /* FallBall iOS */ = {
 			isa = PBXGroup;
 			children = (
 				94B3ADD82964462B0084DDED /* AppDelegate.swift */,
@@ -82,15 +82,15 @@
 				94B3ADDC2964462B0084DDED /* Main.storyboard */,
 				94B3ADDF2964462B0084DDED /* LaunchScreen.storyboard */,
 			);
-			path = "Kaloobities iOS";
+			path = "FallBall iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94B3ADD42964462B0084DDED /* Kaloobities iOS */ = {
+		94B3ADD42964462B0084DDED /* FallBall iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94B3ADE82964462B0084DDED /* Build configuration list for PBXNativeTarget "Kaloobities iOS" */;
+			buildConfigurationList = 94B3ADE82964462B0084DDED /* Build configuration list for PBXNativeTarget "FallBall iOS" */;
 			buildPhases = (
 				94B3ADD12964462B0084DDED /* Sources */,
 				94B3ADD22964462B0084DDED /* Frameworks */,
@@ -100,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = "Kaloobities iOS";
+			name = "FallBall iOS";
 			productName = "Kaloobities iOS";
-			productReference = 94B3ADD52964462B0084DDED /* Kaloobities.app */;
+			productReference = 94B3ADD52964462B0084DDED /* FallBall.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 94B3ADCB2964462A0084DDED /* Build configuration list for PBXProject "Kaloobities" */;
+			buildConfigurationList = 94B3ADCB2964462A0084DDED /* Build configuration list for PBXProject "FallBall" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94B3ADD42964462B0084DDED /* Kaloobities iOS */,
+				94B3ADD42964462B0084DDED /* FallBall iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +318,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ryanpatel.me.Kaloobities;
-				PRODUCT_NAME = Kaloobities;
+				PRODUCT_NAME = FallBall;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -347,7 +347,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ryanpatel.me.Kaloobities;
-				PRODUCT_NAME = Kaloobities;
+				PRODUCT_NAME = FallBall;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -359,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94B3ADCB2964462A0084DDED /* Build configuration list for PBXProject "Kaloobities" */ = {
+		94B3ADCB2964462A0084DDED /* Build configuration list for PBXProject "FallBall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94B3ADE62964462B0084DDED /* Debug */,
@@ -368,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94B3ADE82964462B0084DDED /* Build configuration list for PBXNativeTarget "Kaloobities iOS" */ = {
+		94B3ADE82964462B0084DDED /* Build configuration list for PBXNativeTarget "FallBall iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94B3ADE92964462B0084DDED /* Debug */,

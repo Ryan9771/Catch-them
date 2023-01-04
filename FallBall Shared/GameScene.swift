@@ -6,6 +6,7 @@
 //
 
 import SpriteKit
+import Foundation
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
@@ -39,7 +40,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         basket.physicsBody!.contactTestBitMask = 1 | 2
         
         
-        _ = Timer.scheduledTimer(withTimeInterval: 0.7, repeats: true) { timer in
+        _ = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
             self.addBall()
         }
     }
@@ -65,14 +66,33 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
       }
     
     
+    func perlinNoiseValue() -> Double {
+      // Seed the random number generator with the current time.
+      srandomdev()
+
+      // Generate a random value between 0 and 1.
+      let noise = drand48()
+
+      // Scale the noise value to the range -15 to 15.
+      return noise * 200 - 100
+    }
+    
+    var prevPos:CGFloat = 0
     func addBall() {
         let ball = SKSpriteNode(imageNamed: "ball")
         
-        let xPos = CGFloat.random(in: 0..<self.frame.width)
+        if prevPos == 0 {
+            prevPos = CGFloat.random(in: 15..<self.frame.width-15)
+        }
+        
+        let xNoise = perlinNoiseValue()
+        let xPos = prevPos + xNoise
+        
+        let xPosClamped = max(10, min(xPos, frame.size.width - 10))
         
         let yPos = self.frame.height + ball.size.height
         
-        ball.position = CGPoint(x: xPos, y: yPos)
+        ball.position = CGPoint(x: xPosClamped, y: yPos)
         
         ball.size = CGSize(width: 60, height: 60)
         
@@ -82,7 +102,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         self.addChild(ball)
         ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2)
-        
+    
     }
     
    
@@ -96,22 +116,3 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
 }
-
-//extension GameScene: SKPhysicsContactDelegate {
-//  func physicsBody(_ bodyA: SKPhysicsBody, didBegin contact: SKPhysicsContact) {
-//      print("Collision detected")
-//      // Check if bodyA is a bird and bodyB is the basket, or vice versa.
-//      if (bodyA.categoryBitMask == 0x1 << 1 && contact.bodyB.categoryBitMask == 0x1 << 0) ||
-//            (bodyA.categoryBitMask == 0x1 << 0 && contact.bodyB.categoryBitMask == 0x1 << 1) {
-//          // Increase the player's score.
-//          score += 1
-//
-//          print(score)
-//
-//          // Update the score label.
-//          scoreLabel.text = "\(score)"
-//
-//          // Remove the bird from the scene.
-//          bodyA.node?.removeFromParent()
-//    }
-//  }
