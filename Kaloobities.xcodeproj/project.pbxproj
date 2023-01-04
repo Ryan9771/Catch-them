@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		941171432966037100CD4803 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 941171422966037100CD4803 /* ball.png */; };
+		941171452966037800CD4803 /* basket.png in Resources */ = {isa = PBXBuildFile; fileRef = 941171442966037800CD4803 /* basket.png */; };
 		94B3ADD92964462B0084DDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B3ADD82964462B0084DDED /* AppDelegate.swift */; };
 		94B3ADDB2964462B0084DDED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B3ADDA2964462B0084DDED /* GameViewController.swift */; };
 		94B3ADDE2964462B0084DDED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B3ADDC2964462B0084DDED /* Main.storyboard */; };
@@ -15,11 +17,11 @@
 		94B3ADE32964462B0084DDED /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 94B3ADCE2964462A0084DDED /* GameScene.sks */; };
 		94B3ADE42964462B0084DDED /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B3ADCF2964462A0084DDED /* GameScene.swift */; };
 		94B3ADE52964462B0084DDED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B3ADD02964462B0084DDED /* Assets.xcassets */; };
-		94B3ADEC29644EFD0084DDED /* basket.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B3ADEB29644EFD0084DDED /* basket.png */; };
-		94B3ADEE296454060084DDED /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B3ADED296454060084DDED /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		941171422966037100CD4803 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = ../../../../../.Trash/ball.png; sourceTree = "<group>"; };
+		941171442966037800CD4803 /* basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = basket.png; path = ../../../../../.Trash/basket.png; sourceTree = "<group>"; };
 		94B3ADCD2964462A0084DDED /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		94B3ADCE2964462A0084DDED /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		94B3ADCF2964462A0084DDED /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -29,8 +31,6 @@
 		94B3ADDA2964462B0084DDED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		94B3ADDD2964462B0084DDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94B3ADE02964462B0084DDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		94B3ADEB29644EFD0084DDED /* basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = basket.png; path = ../../../../../Downloads/basket.png; sourceTree = "<group>"; };
-		94B3ADED296454060084DDED /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = ../../../../../Downloads/ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 		94B3ADCC2964462A0084DDED /* Kaloobities Shared */ = {
 			isa = PBXGroup;
 			children = (
-				94B3ADEB29644EFD0084DDED /* basket.png */,
-				94B3ADED296454060084DDED /* ball.png */,
+				941171422966037100CD4803 /* ball.png */,
 				94B3ADCD2964462A0084DDED /* Actions.sks */,
 				94B3ADCE2964462A0084DDED /* GameScene.sks */,
+				941171442966037800CD4803 /* basket.png */,
 				94B3ADCF2964462A0084DDED /* GameScene.swift */,
 				94B3ADD02964462B0084DDED /* Assets.xcassets */,
 			);
@@ -143,13 +143,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941171452966037800CD4803 /* basket.png in Resources */,
 				94B3ADE32964462B0084DDED /* GameScene.sks in Resources */,
 				94B3ADDE2964462B0084DDED /* Main.storyboard in Resources */,
+				941171432966037100CD4803 /* ball.png in Resources */,
 				94B3ADE22964462B0084DDED /* Actions.sks in Resources */,
-				94B3ADEC29644EFD0084DDED /* basket.png in Resources */,
 				94B3ADE12964462B0084DDED /* LaunchScreen.storyboard in Resources */,
 				94B3ADE52964462B0084DDED /* Assets.xcassets in Resources */,
-				94B3ADEE296454060084DDED /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
